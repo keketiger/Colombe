@@ -1,20 +1,10 @@
-let Player = [];
-let playerData = {
-    identifier: undefined,
-    name: undefined
-}
-
-Player.Create = function(id, name) {
-    playerData.identifier = id;
-    playerData.name = name;
-}
-
-Player.GetIdentifier = function() {
-    return playerData.identifier;
-}
-
-Player.GetName = function() {
-    return playerData.name;
+class Player {
+    constructor(playerName) {
+        this.playerName = playerName;
+    }
+    get name() {
+        return this.playerName;
+    }
 }
 
 export default Player;

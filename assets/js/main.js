@@ -6,9 +6,9 @@
 
 import Player from './class/player';
 
-Player.Create(1, 'Kevin');
+var player = new Player('Kevin');
 
 var test = document.createElement('h1');
-test.innerText = 'Bienvenue #' + Player.GetIdentifier() + ' ' + Player.GetName();
+test.innerText = 'Bienvenue ' + player.name;
 
 document.body.appendChild(test);

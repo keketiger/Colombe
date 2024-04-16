@@ -9,6 +9,6 @@ import Player from './class/player';
 var player = new Player('Kevin');
 
 var test = document.createElement('h1');
-test.innerText = 'Bienvenue ' + player.name + ' - Dernière position: ' + player.coords.x +'/'+ player.coords.y;
+test.innerText = `Bienvenue ${player.name} - Dernière position: ${player.coords.x}/${player.coords.y}`;
 
 document.body.appendChild(test);
